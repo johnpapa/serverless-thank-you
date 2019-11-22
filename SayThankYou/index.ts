@@ -29,7 +29,7 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
       issue_number,
       body
     };
-    await createComment(context, comment);
+    await createComment(comment);
   }
 
   context.res = {
@@ -38,9 +38,9 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
   };
 };
 
-async function createComment(context: Context, comment: IssuesCreateCommentParams) {
-  const authKey = process.env.githubKey;
-  const octokit = new Octokit({ auth: authKey });
+async function createComment(comment: IssuesCreateCommentParams) {
+  const auth = process.env.githubKey;
+  const octokit = new Octokit({ auth });
   const response = await octokit.issues.createComment(comment);
   return response;
 }
