@@ -39,20 +39,9 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
 };
 
 async function createComment(context: Context, comment: IssuesCreateCommentParams) {
-  //const url = `https://api.github.com/repos/${commentContext.owner}/${commentContext.repository}/issues/${commentContext.issueNumber}/comments`;
-
-  const authKey = 'b2efec549e3520ff3d4f36f853968d681bb85f8d';
-
+  const authKey = process.env.githubKey;
   const octokit = new Octokit({ auth: authKey });
-
-  context.log('*** createComment input');
-  context.log(comment);
-
   const response = await octokit.issues.createComment(comment);
-
-  context.log('*** createComment response');
-  context.log(response);
-
   return response;
 }
 
