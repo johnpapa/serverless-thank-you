@@ -11,4 +11,4 @@ Say thank you to everyone who takes the time to create an issue or a pull reques
 
 ## Resources
 
-- [Get VS Code](https://code.visualstudio.com/?wt.mc_id=serverless)_thank_you-github-jopapa)
+- [Get VS Code](https://code.visualstudio.com/?wt.mc_id=serverles_thank_you-github-jopapa)
