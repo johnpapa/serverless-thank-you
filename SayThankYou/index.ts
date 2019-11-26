@@ -8,20 +8,27 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
   const { body: payload } = req;
   context.log(payload);
 
-  const {
-    repository: {
-      name: repo,
-      owner: { login: owner }
-    },
-    issue: {
-      number: issue_number,
-      user: { login: user }
-    }
-  } = payload;
+  const repo = payload.repository.name;
+  const owner = payload.repository.owner.login;
+  const issue_number = payload.issue.number;
+  const user = payload.issue.user.login;
+  const action = payload.action;
 
-  const body = `Thank you @${user} for creating this issue!\n\nHave a Happy Holiday season!`;
+  // const {
+  //   repository: {
+  //     name: repo,
+  //     owner: { login: owner }
+  //   },
+  //   issue: {
+  //     number: issue_number,
+  //     user: { login: user }
+  //   }
+  // } = payload;
 
-  if (payload.action === 'opened') {
+  let body = 'Nothing to see here';
+
+  if (action === 'opened') {
+    body = `Thank you @${user} for creating this issue!\n\nHave a Happy Holiday season!`;
     context.log(body);
     const comment: IssuesCreateCommentParams = {
       repo,
@@ -34,7 +41,7 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
 
   context.res = {
     status: 200 /* Defaults to 200 */,
-    body: body || 'Nothing to see here'
+    body
   };
 };
 
