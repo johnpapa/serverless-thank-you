@@ -1,10 +1,8 @@
 import { AzureFunction, Context, HttpRequest } from '@azure/functions';
-import * as Octokit from '@octokit/rest';
 import { IssuesCreateCommentParams } from '@octokit/rest';
+import * as Octokit from '@octokit/rest';
 
 const httpTrigger: AzureFunction = async function(context: Context, req: HttpRequest): Promise<void> {
-  context.log('*** HTTP trigger function processed a request.');
-
   const { body: payload } = req;
   context.log(payload);
 
@@ -36,7 +34,7 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
       issue_number,
       body
     };
-    await createComment(comment);
+    await createIssueComment(comment);
   }
 
   context.res = {
@@ -45,7 +43,7 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
   };
 };
 
-async function createComment(comment: IssuesCreateCommentParams) {
+async function createIssueComment(comment: IssuesCreateCommentParams) {
   const auth = process.env.githubKey;
   const octokit = new Octokit({ auth });
   const response = await octokit.issues.createComment(comment);
