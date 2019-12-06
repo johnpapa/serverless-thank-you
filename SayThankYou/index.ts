@@ -4,7 +4,7 @@ import { createIssueComment } from '../lib/create-issue-comment';
 
 const httpTrigger: AzureFunction = async function(context: Context, req: HttpRequest): Promise<void> {
   const { body: payload } = req;
-  context.log(payload);
+  // context.log(payload);
 
   const repo = payload.repository.name;
   const owner = payload.repository.owner.login;
