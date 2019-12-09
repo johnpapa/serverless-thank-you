@@ -15,8 +15,9 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
   let body = 'Nothing to see here';
 
   if (action === 'opened') {
-    body = `From all of us on the Cloud Advocacy team at Microsoft, thank you @${user} for creating this issue!\n\nHave a Happy Holiday season!`;
-    // body = `Thank you @${user} for creating this issue!\n\nHave a Happy Holiday season!`;
+    body = `From all of us on the Cloud Advocacy team at Microsoft, thank you @${user} for creating this issue!
+    \n\nHave a Happy Holiday season!
+    \n\nDon't forget to [share your solution on Twitter with the tag #25DaysOfServerless](https://twitter.com/intent/tweet?text=%2325DaysOfServerless)`;
     context.log(body);
     const comment: IssuesCreateCommentParams = {
       repo,
