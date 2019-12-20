@@ -1,6 +1,7 @@
 import { AzureFunction, Context, HttpRequest } from '@azure/functions';
 import { IssuesCreateCommentParams } from '@octokit/rest';
 import { createIssueComment } from '../lib/create-issue-comment';
+import { issues_holiday, issues_oof } from '../lib/message';
 
 const httpTrigger: AzureFunction = async function(context: Context, req: HttpRequest): Promise<void> {
   const { body: payload } = req;
@@ -15,9 +16,7 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
   let body = 'Nothing to see here';
 
   if (action === 'opened') {
-    body = `From all of us on the Cloud Advocacy team at Microsoft, thank you for creating this issue!
-    \n\nHave a Happy Holiday season!
-    \n\nFeel free to [share your solution on Twitter with the tag #25DaysOfServerless](https://twitter.com/intent/tweet?text=%2325DaysOfServerless)`;
+    body = issues_oof ?? body;
     context.log(body);
     const comment: IssuesCreateCommentParams = {
       repo,
