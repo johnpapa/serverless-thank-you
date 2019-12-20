@@ -1,7 +1,7 @@
 import { AzureFunction, Context, HttpRequest } from '@azure/functions';
 import { IssuesCreateCommentParams } from '@octokit/rest';
 import { createIssueComment } from '../lib/create-issue-comment';
-import { pullRequest } from '../lib/message';
+import { pullRequest_oof } from '../lib/message';
 
 const httpTrigger: AzureFunction = async function(context: Context, req: HttpRequest): Promise<void> {
   const { body: payload } = req;
@@ -16,7 +16,7 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
   let body = 'Nothing to see here';
 
   if (action === 'opened') {
-    body = pullRequest ?? body;
+    body = pullRequest_oof ?? body;
     context.log(body);
     const comment: IssuesCreateCommentParams = {
       repo,
