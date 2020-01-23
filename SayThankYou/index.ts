@@ -26,7 +26,7 @@ const httpTrigger: AzureFunction = async function(context: Context, req: HttpReq
   let body = 'Nothing to see here';
 
   if (action === 'opened') {
-    body = `Thank you @${user} for creating this issue!\n\nHave a Happy Holiday season!`;
+    body = `Thank you @${user} for creating this issue!`;
     context.log(body);
     const comment: IssuesCreateCommentParams = {
       repo,
