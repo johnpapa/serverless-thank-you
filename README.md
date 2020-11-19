@@ -75,7 +75,7 @@ Here is how you can execute this application locally.
 
 Learn more about serverless with Free Training!
 
-- ✅ **[Serverless Free Courses](https://docs.microsoft.com/learn/browse/?term=azure functions&WT.mc_id=javascript-0000-jopapa)**
+- ✅ **[Serverless Free Courses](https://docs.microsoft.com/learn/browse/?term=azure&WT.mc_id=javascript-0000-jopapa functions&WT.mc_id=javascript-0000-jopapa)**
 
 ## Additional Resources ⭐️
 
