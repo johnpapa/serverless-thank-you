@@ -21,20 +21,20 @@ Enjoy your challenge and Happy Holidays!
 
 Tools
 
-- **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=25daysofserverless-github-jopapa)**
-- **[Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=25daysofserverless-github-jopapa)**
-- **[Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?WT.mc_id=25daysofserverless-github-jopapa)**
-- **[Free Azure Trial](https://azure.microsoft.com/free?WT.mc_id=25daysofserverless-github-jopapa)**
+- **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-jopapa)**
+- **[Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-0000-jopapa)**
+- **[Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=javascript-0000-jopapa)**
+- **[Free Azure Trial](https://azure.microsoft.com/free?WT.mc_id=javascript-0000-jopapa)**
 
 Docs
 
-- **[Azure Functions docs - Webhooks](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook?tabs=csharp#webhooks&WT.mc_id=25daysofserverless-github-jopapa)**
+- **[Azure Functions docs - Webhooks](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook?tabs=csharp&WT.mc_id=javascript-0000-jopapa#webhooks&WT.mc_id=25daysofserverless-github-jopapa)**
 
 - **[GitHub - Create a Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line?WT.mc_id=25daysofserverless-github-jopapa)**
 - **[GitHub - Webhook documentation](https://developer.github.com/webhooks?WT.mc_id=25daysofserverless-github-jopapa)**
 - **[GitHub API - IssuesEvent Reference](https://developer.github.com/v3/activity/events/types/#issuesevent?WT.mc_id=25daysofserverless-github-jopapa)**
 - **[Octokit - GitHub REST API client for JavaScript](https://github.com/octokit/rest.js)** and **[Docs](https://octokit.github.io/rest.js/)**
-- **[Learn - Monitor GitHub events by using a webhook with Azure Functions](https://docs.microsoft.com/en-us/learn/modules/monitor-github-events-with-a-function-triggered-by-a-webhook?WT.mc_id=25daysofserverless-github-jopapa)**
+- **[Learn - Monitor GitHub events by using a webhook with Azure Functions](https://docs.microsoft.com/learn/modules/monitor-github-events-with-a-function-triggered-by-a-webhook?WT.mc_id=javascript-0000-jopapa)**
 
 ## Getting Started 🔥
 
@@ -42,9 +42,9 @@ Here is how you can execute this application locally.
 
 1. Install the tools
 
-   - **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=25daysofserverless-github-jopapa)**
-   - **[Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=25daysofserverless-github-jopapa)**
-   - **[Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?WT.mc_id=25daysofserverless-github-jopapa)**
+   - **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-jopapa)**
+   - **[Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-0000-jopapa)**
+   - **[Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=javascript-0000-jopapa)**
 
 2. Clone this repository
 
@@ -75,16 +75,16 @@ Here is how you can execute this application locally.
 
 Learn more about serverless with Free Training!
 
-- ✅ **[Serverless Free Courses](https://docs.microsoft.com/learn/browse/?term=azure%20functions&WT.mc_id=25daysofserverless-github-jopapa)**
+- ✅ **[Serverless Free Courses](https://docs.microsoft.com/learn/browse/?term=azure&WT.mc_id=javascript-0000-jopapa functions&WT.mc_id=javascript-0000-jopapa)**
 
 ## Additional Resources ⭐️
 
 Some additional awesome serverless resources
 
-- ✅ **[Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=25daysofserverless-github-jopapa)**
-- ✅ **[Azure SDK for JavaScript Documentation](https://docs.microsoft.com/azure/javascript/?WT.mc_id=25daysofserverless-github-jopapa)**
-- ✅ **[Create your first function using Visual Studio Code](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=25daysofserverless-github-jopapa)**
-- ✅ **[Free E-Book - Azure Serverless Computing Cookbook, Second Edition](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?WT.mc_id=25daysofserverless-github-jopapa)**
+- ✅ **[Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=javascript-0000-jopapa)**
+- ✅ **[Azure SDK for JavaScript Documentation](https://docs.microsoft.com/azure/javascript/?WT.mc_id=javascript-0000-jopapa)**
+- ✅ **[Create your first function using Visual Studio Code](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=javascript-0000-jopapa)**
+- ✅ **[Free E-Book - Azure Serverless Computing Cookbook, Second Edition](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?WT.mc_id=javascript-0000-jopapa)**
 
 ## I have doubts ... What do I do
 
